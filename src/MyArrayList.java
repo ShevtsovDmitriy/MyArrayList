@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by Дмитрий on 23.10.2014.
  */
@@ -9,6 +11,17 @@ public class MyArrayList {
     public MyArrayList() {
         list = new int[10];
         index = -1;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        MyArrayList that = (MyArrayList) o;
+
+        return index == that.index && Arrays.equals(list, that.list);
+
     }
 
     private void increase(){
