@@ -3,11 +3,12 @@
  */
 public class Main {
     public static void main(String[] args) {
-        MyArrayList mal = new MyArrayList();
-        MyArrayList second = new MyArrayList();
+        SortedArrayList mal = new SortedArrayList();
+        mal.add(3);
         mal.add(5);
-        second.add(6);
+        mal.add(9);
+        mal.add(4);
+
         System.out.println(mal);
-        System.out.print(mal.equals(second));
     }
 }

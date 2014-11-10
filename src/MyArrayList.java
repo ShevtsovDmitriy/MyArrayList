@@ -1,16 +1,23 @@
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Created by Дмитрий on 23.10.2014.
  */
 public class MyArrayList {
 
-    private int[] list;
-    private int index;
+    protected int[] list;
+    protected int index;
 
     public MyArrayList() {
         list = new int[10];
         index = -1;
+    }
+
+    public MyArrayList(int[] initArr){
+        list = new int[10];
+        System.arraycopy(initArr, 0, list, 0, initArr.length);
+        index = initArr.length - 1;
     }
 
     @Override
@@ -24,7 +31,7 @@ public class MyArrayList {
 
     }
 
-    private void increase(){
+    protected void increase(){
         int[] buf = new int[list.length];
         System.arraycopy(list, 0, buf, 0, list.length);
         list = new int[Math.round(list.length*1.5f)];
