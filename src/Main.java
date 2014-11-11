@@ -4,11 +4,11 @@
 public class Main {
     public static void main(String[] args) {
         SortedArrayList mal = new SortedArrayList();
-        mal.add(3);
-        mal.add(5);
-        mal.add(9);
-        mal.add(4);
-
+        mal.addCopy(3);
+        mal.addCopy(5);
+        mal.addCopy(9);
+        mal.addCopy(4);
+        mal.addCopy(3);
         System.out.println(mal);
     }
 }
