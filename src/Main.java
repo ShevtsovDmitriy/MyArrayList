@@ -10,5 +10,6 @@ public class Main {
         mal.addCopy(4);
         mal.addCopy(3);
         System.out.println(mal);
+        System.out.println(mal.found(9));
     }
 }
