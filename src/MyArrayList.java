@@ -4,7 +4,7 @@ import java.util.Collections;
 /**
  * Created by Дмитрий on 23.10.2014.
  */
-public class MyArrayList {
+public class MyArrayList implements MyIntList{
 
     protected int[] list;
     protected int index;

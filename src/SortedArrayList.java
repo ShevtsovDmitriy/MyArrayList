@@ -1,9 +1,9 @@
 /**
  * Created by Дмитрий on 10.11.2014.
  */
-public class SortedArrayList extends MyArrayList {
+public class SortedArrayList extends MyArrayList implements MyIntList{
 
-    @Override
+/*    @Override
     public void add(int element) {
         if (index == list.length - 1){
             increase();
@@ -19,8 +19,8 @@ public class SortedArrayList extends MyArrayList {
             }
         }
     }
-
-    public void addCopy(int element) {
+*/
+    public void add(int element) {
         if (index == list.length - 1){
             increase();
         }
