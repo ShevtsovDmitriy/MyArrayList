@@ -1,5 +1,6 @@
 /**
  * Created by Дмитрий on 17.11.2014.
+ * Interface fo ArrayList<int>
  */
 public interface MyIntList {
     public void add(int element);

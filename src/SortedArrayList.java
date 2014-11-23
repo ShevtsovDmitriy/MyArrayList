@@ -1,6 +1,3 @@
-/**
- * Created by Дмитрий on 10.11.2014.
- */
 public class SortedArrayList extends MyArrayList implements MyIntList{
 
 /*    @Override
@@ -60,18 +57,19 @@ public class SortedArrayList extends MyArrayList implements MyIntList{
     public Integer found(int element) {
         if (index == -1) return null;
         else {
-            if (element == list[0]) return list[0];
-            if (element == list[index]) return list[index];
+            if (element == list[0]) return 0;
+            if (element == list[index]) return index;
             return binarySeach(0, index, element);
         }
     }
 
     private Integer binarySeach(int left, int right, int element){
-        int middle = (left + right) / 2;
+        if (left >= right) return null;
+        int middle = left + (right - left) / 2;
         if(list[middle] == element) return middle;
         else{
             if (element < list[middle]) return binarySeach(left, middle, element);
-            else return binarySeach(middle, right, element);
+            else return binarySeach(middle + 1, right, element);
         }
 
     }

@@ -1,9 +1,5 @@
 import java.util.Arrays;
-import java.util.Collections;
 
-/**
- * Created by Дмитрий on 23.10.2014.
- */
 public class MyArrayList implements MyIntList{
 
     protected int[] list;
